@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/weather_app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+</head>
+<body>
+
+  <h1></h1>
+  <h2></h2>
+  <p></p>
+
+  <div id="container">
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <br><br>
+    <p>Please enter your location to see the weather in your area.  The default
+    here is London, Uk</p>
+    <label for="">Latitude: </label><br>
+    <input type="text"><br>
+    <label for="">Longitude: </label>
+    <input type="text">
+    <button>Submit</button>
+    <br><br>
+  </div>
+
+  <div id="weather_panel">
+    <div id="top">
+      <div id="place_location">
+        <p id="place">Uxbridge, GB</p>
+      </div>
+      <div id="icon">
+        <img src="images/icon.png" alt="Weather icon">
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="descriptive_words">
+        <p id="description">scattered clouds</p>
+      </div>
+      <div id="temperature_number">
+        <p id="temperature"><span>3.65 </span><a href="#">C</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/weather_app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* An experiment with arranging a grid in a div and using media queries
+to provide a responsive design.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 30vw;
+  height: 30vw;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+
+.inner {
+  float: left;
+  width: 15vw;
+  height: 15vw;
+}
+
+.top-left, .bottom-right {
+  background-color: lightyellow;
+}
+
+.top-right, .bottom-left {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width:1200px) {
+  /* For mobile phones: */
+  .container {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .inner {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .container {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .inner {
+    width: 50vw;
+    height: 50vw;
+  }
+}
