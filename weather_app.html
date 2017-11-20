@@ -1,3 +1,11 @@
+<!-- Author: Richard Myatt
+     Date: 20 November 2017
+
+An exercise.  A weather app for SL.  This could be extended to include geo
+location to determine the local weather but this requires https support and
+does not appear to be something for which the code playground can be used.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,44 +17,33 @@
 </head>
 <body>
 
-  <h1></h1>
-  <h2></h2>
-  <p></p>
-
-  <div id="container">
+  <div class="form">
     <header>
       <h1>Weather App</h1>
     </header>
     <br><br>
     <p>Please enter your location to see the weather in your area.  The default
-    here is London, Uk</p>
-    <label for="">Latitude: </label><br>
-    <input type="text"><br>
-    <label for="">Longitude: </label>
-    <input type="text">
-    <button>Submit</button>
+    here is Kuala Lumpur, Malaysia.</p>
+    <label for="lat">Latitude: </label><br>
+    <input class="lat" type="text" name="lat"><br>
+    <label for="long">Longitude: </label>
+    <input class="long" type="text" name="long"><br>
+    <button type="button" onclick="getStats()">Submit</button>
     <br><br>
-  </div>
 
-  <div id="weather_panel">
-    <div id="top">
-      <div id="place_location">
-        <p id="place">Uxbridge, GB</p>
+    <div class="panel">
+
+      <div class="inner"><p class="local"></p></div>
+      <div class="inner"><img src="#" alt="Weather icon"></div>
+      <div class="inner"><p class="description"></p></div>
+      <div class="inner">
+        <div class="combine">
+          <span class="temperature"></span><a href="#" onclick="convertTemp()">C</a>
+        </div>
       </div>
-      <div id="icon">
-        <img src="images/icon.png" alt="Weather icon">
-      </div>
-    </div>
-    <div id="bottom">
-      <div id="descriptive_words">
-        <p id="description">scattered clouds</p>
-      </div>
-      <div id="temperature_number">
-        <p id="temperature"><span>3.65 </span><a href="#">C</a></p>
-      </div>
+
     </div>
   </div>
-
 
 
 

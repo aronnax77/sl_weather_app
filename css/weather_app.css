@@ -1,13 +1,26 @@
-#container, #weather_panel {
+/* Author: Richard Myatt
+     Date: 20 November 2017
+
+An exercise.  A weather app for SL.  This could be extended to include geo
+location to determine the local weather but this requires https support and
+does not appear to be something for which the code playground can be used.
+*/
+
+h1 {
+  text-align: center;
+}
+
+.form, .panel {
   text-align: left;
-  width: 500px;
-  margin: 0 auto;
+  width: 36vw;
+  height: 12vw;
+  margin: 0 auto 40px;
   /*border: 2px solid red;*/
 }
 
 input {
   margin-bottom: 10px;
-  width: 100%;
+  width: 95%;
 }
 
 button {
@@ -16,53 +29,41 @@ button {
   background-color: orange;
 }
 
-h1 {
+.panel {
   text-align: center;
-}
-
-#weather_panel {
-  text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2vw;
   background-color: black;
   color: white;
   border-radius: 25px;
   /*border: 2px solid blue;*/
 }
 
-#top, #bottom {
+.inner {
   position: relative;
-  min-height: 100px;
-  /*border: 2px solid yellow;*/
+  float: left;
+  width: 18vw;
+  height: 6vw;
 }
 
-#place_location, #icon, #descriptive_words, #temperature_number {
-  display: inline-block;
-  width: 45%;
-  /*border: 2px solid green;*/
-}
-
-#place_location {
+.panel p, img, .combine {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
 }
 
-#icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-#descriptive_words {
-  position: absolute;
-  left: 0;
-}
-
-#temperature_number {
-  position: absolute;
-  right: 0;
+.panel p {
+  transform: translate(-50%, -100%);
 }
 
 img {
-  width: 75px;
+  width: 100px;
+  transform: translate(-50%, -40%);
+}
+
+.combine {
+  transform: translate(-50%, 0);
+}
+
+a {
+  color: yellow;
 }
