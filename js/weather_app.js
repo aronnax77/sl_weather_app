@@ -25,7 +25,7 @@ var elLg = document.querySelector('.long');
 // Converts temperature from celcius to fahrenheit
 function convertTemp() {
   if(anchor.textContent == 'C') {
-    temp.textContent = temp.textContent * 9 /5 + 32;
+    temp.textContent = (temp.textContent * 9 /5 + 32).toFixed(2);
     anchor.textContent = 'F';
   } else {
     temp.textContent = responseObj.main.temp;
