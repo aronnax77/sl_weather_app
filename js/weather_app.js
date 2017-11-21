@@ -34,14 +34,11 @@ function convertTemp() {
 
 // this function runs when the form button is pressed
 function getStats() {
-  alert('In getStats');
   var lt = elLt.value;
   var lg = elLg.value;
-  alert(lt + ' || ' + lg);
   if(lt && lg && lt <= 360 && lt >= -360 && lg <= 360 && lg >= -360) {
     lat = lt;
     long = lg;
-    alert('over init');
     str    = 'current?lon=' + long + '&' + 'lat=' + lat;
     url    = 'https://fcc-weather-api.glitch.me/api/' + str;
     init();
@@ -60,7 +57,6 @@ function init() {
   request.send();
 
   request.onreadystatechange = function() {
-    //alert(request.readyState);
     if (request.readyState === 4) {
       if (request.status === 200) {
         responseObj = JSON.parse(request.response);

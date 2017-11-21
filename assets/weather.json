@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 139,
+    "lat": 35
+  },
+  "weather": [
+    {
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F10n.png?1499366021399"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 11.38,
+    "pressure": 1014.14,
+    "humidity": 100,
+    "temp_min": 11.38,
+    "temp_max": 11.38,
+    "sea_level": 1023.49,
+    "grnd_level": 1014.14
+  },
+  "wind": {
+    "speed": 5.55,
+    "deg": 38.0002
+  },
+  "rain": {
+    "3h": 0.3925
+  },
+  "clouds": {
+    "all": 48
+  },
+  "dt": 1511039439,
+  "sys": {
+    "message": 0.1648,
+    "country": "JP",
+    "sunrise": 1510953713,
+    "sunset": 1510990583
+  },
+  "id": 1851632,
+  "name": "Shuzenji",
+  "cod": 200
+}
+
+

@@ -18,10 +18,13 @@ does not appear to be something for which the code playground can be used.
 <body>
 
   <div class="form">
+
     <header>
       <h1>Weather App</h1>
     </header>
     <br><br>
+
+    <!-- form elements to allow the input of latitude and longitude -->
     <p>Please enter your location to see the weather in your area.  The default
     here is Kuala Lumpur, Malaysia.</p>
     <label for="lat">Latitude: </label><br>
@@ -31,8 +34,8 @@ does not appear to be something for which the code playground can be used.
     <button type="button" onclick="getStats()">Submit</button>
     <br><br>
 
+    <!-- weather app panel set initially for Kuala Lumpur, Malaysia -->
     <div class="panel">
-
       <div class="inner"><p class="local"></p></div>
       <div class="inner"><img src="#" alt="Weather icon"></div>
       <div class="inner"><p class="description"></p></div>
@@ -44,8 +47,6 @@ does not appear to be something for which the code playground can be used.
 
     </div>
   </div>
-
-
 
   <script src="js/weather_app.js"></script>
 

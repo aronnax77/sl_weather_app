@@ -15,7 +15,6 @@ h1 {
   width: 36vw;
   height: 12vw;
   margin: 0 auto 40px;
-  /*border: 2px solid red;*/
 }
 
 input {
@@ -31,11 +30,10 @@ button {
 
 .panel {
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   background-color: black;
   color: white;
   border-radius: 25px;
-  /*border: 2px solid blue;*/
 }
 
 .inner {
@@ -56,7 +54,7 @@ button {
 }
 
 img {
-  width: 100px;
+  width: 6vw;
   transform: translate(-50%, -40%);
 }
 
@@ -66,4 +64,46 @@ img {
 
 a {
   color: yellow;
+}
+
+@media only screen and (max-width:1200px) {
+  /* For medium size screens: */
+  .form, .panel {
+    width: 72vw;
+    height: 24vw;
+  }
+
+  .inner {
+    width: 36vw;
+    height: 12vw;
+  }
+
+  .panel {
+    font-size: 2.4vw;
+  }
+
+  img {
+    width: 12vw;
+  }
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile devices: */
+  .form, .panel {
+    width: 96vw;
+    height: 32vw;
+  }
+
+  .inner {
+    width: 48vw;
+    height: 16vw;
+  }
+
+  .panel {
+    font-size: 3.5vw;
+  }
+
+  img {
+    width: 24vw;
+  }
 }
