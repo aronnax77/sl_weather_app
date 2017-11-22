@@ -29,6 +29,7 @@ function convertTemp() {
     anchor.textContent = 'F';
   } else {
     temp.textContent = responseObj.main.temp;
+	anchor.textContent = 'C';
   }
 }
 
